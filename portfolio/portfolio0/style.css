@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    padding: 0vw 10vw 2vw 10vw;
+    color: white;+
+}
+
+header{
+    width: 100%;
+    display: flex;
+    background-color: aquamarine;
+    padding-top: 1%;
+    margin-bottom: 10%;
+}
+
+.name{
+    width: 50%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: end;
+    font-size: 3vw;
+    font-weight: bold;
+    color: white;
+    padding-left: 2%;
+}
+
+.nav{
+    /* background-color: aqua; */
+    width: 50%;
+    display: flex;
+    padding-right: 3%;
+}
+
+.nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: antiquewhite; */
+}
+
+.nav ul li{
+    display: flex;
+    align-items: end;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.9vw;
+}
+
+.nav ul li a:hover{
+    color: red;
+}
+
+.home{
+    /* background-color: aqua; */
+    width: 60%;
+}
+
+.home h1{
+    font-size: 5vw;
+    margin-bottom: 0.5vw;
+    margin-top: 0.5vw;
+}
+
+.home h2{
+    font-size: 2.4vw;
+}
+
+.home p{
+    margin-top: 1vw;
+    text-align: justify;
+}
+
+.home h2 span{
+    color: red;
+}
