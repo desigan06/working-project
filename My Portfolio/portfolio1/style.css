@@ -7,6 +7,7 @@ body{
     width: 100vw;
     display: flex;
     justify-content: center;
+    background-color: black;
 }
 
 header{
@@ -16,7 +17,7 @@ header{
     display: flex;
     color: white;
     position: fixed;
-    box-shadow: 2px 2px 8px -2px red;
+    box-shadow: 2px 2px 30px -2px red;
 }
 
 header .name{
@@ -54,7 +55,8 @@ header .nav ul li a:hover{
 .home{
     width: 80%;
     padding-top: 13vw;
-    /* color: white; */
+    color: white;
+    background-color: black;    
 }
 
 .home h3{
@@ -76,7 +78,7 @@ header .nav ul li a:hover{
     width: 10vw;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3vw;
+    margin-bottom: 5vw;
 }
 
 .home .links span{
@@ -88,6 +90,7 @@ header .nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 0px 10px 5px ;
 }
 
 .home .resume{
@@ -99,5 +102,7 @@ header .nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 26px;
+    border-radius: 28px;
+    box-shadow: 0px 0px 20px 5px red;
 }
+
