@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-container {
+    width: 400px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.chat-message {
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    animation: fadeIn 0.3s ease;
+}
+
+.chat-message.user {
+    background-color: #d1ecf1;
+    text-align: right;
+    margin-left: auto;
+}
+
+.chat-message.bot {
+    background-color: #e2e3e5;
+    text-align: left;
+}
+
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    width: 70px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#status-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    display: none;
+}
+
+#status-indicator.hidden {
+    display: none;
+}
+
+#calculator-result {
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+#calculator-result.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#voice-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#voice-btn:hover {
+    background-color: #218838;
+}
+
+#theme-toggle {
+    background-color: #f39c12;
+    border-radius: 50%;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+#theme-toggle:hover {
+    background-color: #e67e22;
+}
+
+#calculator-page{
+    background-color: #4c4af1;
+    border-radius: 50%;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+#calculator-page a{
+    color: white;
+}
+
+#calculator-page:hover {
+    background-color: #1100fa;
+}
+
+#music-player-page{
+    background-color: #ae4af1;
+    border-radius: 50%;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+#music-player-page:hover {
+    background-color: #9900ff;
+}

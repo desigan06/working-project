@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link id="theme-style" rel="stylesheet" href="light-mode.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Type a command..." autofocus>
+            <button onclick="sendMessage()">Send</button>
+            <button id="voice-btn">🎙️</button> <!-- Button for voice recognition -->
+            <button id="theme-toggle">🌙</button> <!-- Button for theme toggle -->
+            <button id="calculator-page"><a href="https://desiganportfolio.netlify.app/projects/calculator/calculator"><i class='bx bxs-calculator'></i></a></button>
+            <button id="music-player-page"><a href="#"><i class='bx bx-music'></i></a></button>
+        </div>
+        <div id="status-indicator" class="hidden"></div>
+        <div id="calculator-result" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
